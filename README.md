@@ -23,6 +23,7 @@
 - **`Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange`** – проверяет выброс исключения при отрицательной сумме.
 - **`Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`** – проверяет выброс исключения при превышении баланса.  
   В процессе рефакторинга метод был улучшен: добавлена проверка сообщения исключения с помощью `StringAssert.Contains`.
+  После рефакторинга все тесты выполняются без ошибок (состояние: пройдено)
 
 ### 4. Написание тестов для метода `Credit`
 - **`Credit_WithValidAmount_UpdatesBalance`** – проверяет, что баланс увеличивается на корректную сумму.
